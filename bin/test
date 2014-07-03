@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if [[ -n $(unzip -v | grep "UnZip 6.00") ]]; then
+    echo "UnZip installed."
+else
+    echo "UnZip not found."
+fi

@@ -1,5 +1,5 @@
 Heroku buildpack: unzip
-======================
+=======================
 
 This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks)
 for adding unzip to your application.
@@ -18,3 +18,23 @@ where this is just one of the buildpacks you'll be working with.
 
 This will bundle unzip into your instance without impacting your existing
 system.
+
+
+Develop
+-------
+
+.. code-block:: python
+
+    $ git clone http://github.com/niteoweb/heroku-buildpack-unzip.git
+
+    $ cd heroku-buildpack-unzip
+    $ heroku create -s cedar
+    ...
+
+    $ heroku config:add BUILDPACK_URL=http://github.com/niteoweb/heroku-buildpack-unzip.git
+    ...
+
+    $ git push heroku master
+    ...
+
+    $ heroku run "unzip -v"

@@ -1,0 +1,9 @@
+script: echo "Nothing to do. Move along."
+deploy:
+  provider: heroku
+  strategy: git
+  api_key:
+    secure: cWmsGskMGhFSnbdEDPL1fR9h8U16U4Vz/Xh9TDN+6dLlxtRPavmOTEL3VaUED5d8Zcn4qjQXreCgEErRm28ICXqCz9GybjXMVqk559vDhx0r1KZulhgNsQ7B9MSQlV4wtNiKubbRZ/vwdm9vHAnXi+t3D+6SYlVVx3/eu6D/Wfg=
+  app: heroku-buildpack-unzip
+  run:
+  - bin/test
