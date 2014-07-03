@@ -37,11 +37,11 @@ if [ ! -f $CACHE_DIR/unzip_$VERSION ]; then
 	cd "unzip$VERSION"
 	cp unix/Makefile .
 	make generic
-	cp "$UNZIP_BUILD/unzip$VERSION/unzip" $CACHE_DIR/unzip_$VERSION 
+	cp "$UNZIP_BUILD/unzip$VERSION/unzip" $CACHE_DIR/unzip_$VERSION
 	cp "$UNZIP_BUILD/unzip$VERSION/unzip" $INSTALL_DIR/
 else
 	echo "Installing unzip from cache" | indent
-	cp $CACHE_DIR/unzip_$VERSION  $INSTALL_DIR/unzip 
+	cp $CACHE_DIR/unzip_$VERSION  $INSTALL_DIR/unzip
 fi
 
 set-env PATH '/app/.heroku/vendor/unzip/:$PATH'
