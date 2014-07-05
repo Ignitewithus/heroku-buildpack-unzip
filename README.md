@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/niteoweb/heroku-buildpack-unzip.svg?branch=master)](https://travis-ci.org/niteoweb/heroku-buildpack-unzip)
+
 Heroku buildpack: unzip
 =======================
 
