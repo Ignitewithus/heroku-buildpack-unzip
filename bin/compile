@@ -32,7 +32,7 @@ mkdir -p $CACHE_DIR
 if [ ! -f $CACHE_DIR/unzip_$VERSION ]; then
 	echo "Fetching and installing unzip" | indent
 	cd $UNZIP_BUILD
-	curl -OL "http://downloads.sourceforge.net/infozip/unzip$VERSION.tar.gz"
+	curl -OL "https://s3.amazonaws.com/unzip/unzip$VERSION.tar.gz"
 	tar zxvf "unzip$VERSION.tar.gz"
 	cd "unzip$VERSION"
 	cp unix/Makefile .
